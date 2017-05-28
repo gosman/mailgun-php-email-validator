@@ -1,15 +1,17 @@
 # mailgun-php-email-validator
 
-Please make sure to use your Email Validation Key which can be found by logging in to your Mailgun account and navigating to the following URL https://app.mailgun.com/app/account/security
+# Mailgun V3 API email validation functions for PHP
+
+# Please make sure to use your Email Validation Key which can be found by logging in to your Mailgun account and navigating to the following URL https://app.mailgun.com/app/account/security
 
 
-Mailgun V3 API email validation functions for PHP
+Calls the Mailgun V3 API and parses a single E-Mail Address for validation
 
 ```
 validateEmail($apiPublicKey, $emailAddress) 
 ```
 
-Calls the Mailgun V3 API and parses a single E-Mail Address for validation and returns a JSON response
+Sample JSON response
 
 ```
 {  
@@ -24,11 +26,13 @@ Calls the Mailgun V3 API and parses a single E-Mail Address for validation and r
 }
 ```
 
+Calls the Mailgun V3 API and parses multiple E-Mail Address for validation
+
 ```
 validateEmails($apiPublicKey, $emailAddressArray) 
 ```
 
-Calls the Mailgun V3 API and parses multiple E-Mail Address for validation and returns a JSON response 
+Sample JSON response 
 
 ```
 {  
